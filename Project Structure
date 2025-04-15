@@ -1,0 +1,24 @@
+healthdataflow/
+├── infrastructure/
+│   ├── terraform/       # AWS provisioning
+│   └── kubernetes/      # Container orchestration
+├── ingestion/
+│   ├── kafka-producer/  # Simulated EHR data
+│   └── kinesis/         # Alternative streaming
+├── processing/
+│   ├── airflow/         # DAGs for ETL
+│   ├── dbt/             # Transformation models
+│   └── spark/           # Batch processing
+├── ml/
+│   ├── training/        # Readmission model
+│   ├── serving/         # FastAPI endpoint
+│   └── mlflow/          # Experiment tracking
+├── visualization/
+│   ├── tableau/         # Dashboard files
+│   └── notebooks/       # Exploratory analysis
+├── monitoring/
+│   ├── alerts/          # Data quality checks
+│   └── logs/           # Pipeline monitoring
+└── docs/
+    ├── architecture.md  # System design
+    └── hipaa_compliance.md # Security measures
